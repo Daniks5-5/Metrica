@@ -9,11 +9,16 @@ function ProjectsSection(){
   
     <div> 
      
-    <Heading />
+    <Heading 
+    level = 'h2'
+    text = 'ПРОЕКТЫ'
+    
+    
+    />
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
-            <Button />
+            <Button text='Смотреть все проекты' />
      
 
     </div>

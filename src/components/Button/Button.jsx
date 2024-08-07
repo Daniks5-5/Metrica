@@ -1,9 +1,10 @@
 import React from "react";
+import './Button.css';
 
-  function Button(){
+  function Button(props){
     return(
         <div>
-            <button> Посмотреть услуги </button>
+            <button> {props.text} </button>
              </div>
      
     );

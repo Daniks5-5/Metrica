@@ -12,7 +12,7 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 function App() {
   return (
     
-      <div class="hello">
+      <div className='main'>
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
