@@ -1,7 +1,16 @@
-h1 {
+.heading-h1 {
   font-weight: 400;
   font-size: 60px;
   line-height: 100%;
   letter-spacing: -0.03em;
+  color: #121212;
+}
+
+.heading-h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: #121212;
 }/*# sourceMappingURL=Heading.css.map */

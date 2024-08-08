@@ -3,15 +3,17 @@ import project1 from "../../assets/project1.jpg";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 
-function ProjectCard(){
+function ProjectCard(props){
+    console.log(props);
     return(
    <div>
+    {props.isNew && (<div> isNew </div>)}
         <div>
-            <label htmlFor="">NEW</label>
+        <div>{props.isNew}</div>
        
-        <img src={project1} alt="" />
-        <p> ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023 </p>
-        <a href=""> Подробнее </a>
+        <img src={props.image} alt={props.title} />
+        <p> {props.title} {props. square} {props.year} </p>
+        <a href={props.link}> Подробнее </a>
         </div>
 
    </div>
