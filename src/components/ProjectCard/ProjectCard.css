@@ -1,0 +1,14 @@
+.main-div {
+  margin-bottom: 90px;
+}
+.main-div .img {
+  max-width: 1150px;
+  width: 100%;
+}
+.main-div .link-style {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: #ad1818;
+  text-decoration: none;
+}/*# sourceMappingURL=ProjectCard.css.map */

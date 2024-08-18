@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProjectCard.css";
 import project1 from "../../assets/project1.jpg";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
@@ -6,14 +7,11 @@ import project3 from "../../assets/project3.png";
 function ProjectCard(props){
     console.log(props);
     return(
-   <div>
-    {props.isNew && (<div> isNew </div>)}
+   <div className="main-div">
         <div>
-        <div>{props.isNew}</div>
-       
-        <img src={props.image} alt={props.title} />
+        <img className="img" src={props.image} alt={props.title} />
         <p> {props.title} {props. square} {props.year} </p>
-        <a href={props.link}> Подробнее </a>
+        <a className="link-style" href={props.link}> Подробнее → </a>
         </div>
 
    </div>

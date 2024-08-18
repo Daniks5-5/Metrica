@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import Button from "../Button/Button";
+import './ProjectSection.css';
 import Heading from "../Heading/Heading";
 import projectPhoto1 from "../../assets/project1.jpg"
 import projectPhoto2 from "../../assets/project2.png"
@@ -50,11 +50,10 @@ function ProjectsSection(){
                 year = {project.year}
                 link = {project.link}
                 image={project.image}
-                isNew = {project.isNew}
                 />)
 
     )}        
-            <Button text='Смотреть все проекты' />
+            <button className="project-button">  Смотреть все проекты </button>
     </div>
    </div>
   
