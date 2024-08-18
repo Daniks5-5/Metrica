@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+}
+.flex .row-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+}/*# sourceMappingURL=ServicesSection.css.map */

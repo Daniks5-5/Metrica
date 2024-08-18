@@ -1,4 +1,5 @@
 import React from "react";
+import './ServicesSection.css';
 import ServiceCard from "../ServiceCard/ServiceCard";
 import service1 from "../../assets/service1.png";
 import service2 from "../../assets/service2.png";
@@ -39,8 +40,8 @@ const CardArray = [
 function ServicesSection(){
  //вывожу из массива по две карточки на одной строке
     return(
-        <div>
-            <div>
+        <div className="flex">
+            <div className="row-flex">
             {CardArray.filter((card) => card.id < 3).map((CardArrays) => (
                     <ServiceCard
                         image={CardArrays.image}
@@ -50,7 +51,7 @@ function ServicesSection(){
                 ))}
               
             </div>
-            <div>
+            <div className="row-flex"> 
             {CardArray.filter((card) => card.id > 2).map((CardArrays) => (
                     <ServiceCard
                         image={CardArrays.image}

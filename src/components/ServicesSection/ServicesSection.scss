@@ -1,0 +1,12 @@
+.flex{
+  
+    display: flex;
+    flex-direction: column;
+    gap:85px;
+    .row-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+    }
+
+}
