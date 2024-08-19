@@ -37,7 +37,7 @@ const projects = [
 
 function ProjectsSection(){
     return(
-   <div>
+   <div className="Project">
     <div> 
     <Heading 
     level = 'h2'

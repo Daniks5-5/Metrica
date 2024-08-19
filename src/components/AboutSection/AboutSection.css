@@ -1,7 +1,12 @@
-.About {
+.AboutSection {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0% auto;
+}
+.AboutSection .About {
   margin-bottom: 150px;
 }
-.About p {
+.AboutSection .About p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 45px;

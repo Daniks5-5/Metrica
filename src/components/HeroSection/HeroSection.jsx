@@ -4,7 +4,7 @@ import './HeroSection.css';
 
   function HeroSection(){
     return(
-        <div>
+        <div className="HeroSection">
                <Heading
                level = "h1"
                text = "Современные и стильные интерьеры для комфортной жизни"

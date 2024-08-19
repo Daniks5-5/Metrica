@@ -1,8 +1,11 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  /*  плавный скролл */
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope", sans-serif;
-}
-body .main {
-  max-width: 1150px;
-  width: 100%;
-  margin: 0% auto;
+  overflow-x: hidden;
 }/*# sourceMappingURL=index.css.map */

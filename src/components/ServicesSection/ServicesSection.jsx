@@ -5,6 +5,7 @@ import service1 from "../../assets/service1.png";
 import service2 from "../../assets/service2.png";
 import service3 from "../../assets/service3.png";
 import service4 from "../../assets/service4.png";
+import ServiceButton from "../ServiceButton/ServiceButton";
 const CardArray = [
 
     {
@@ -40,6 +41,7 @@ const CardArray = [
 function ServicesSection(){
  //вывожу из массива по две карточки на одной строке
     return(
+        <div className="section">
         <div className="flex">
             <div className="row-flex">
             {CardArray.filter((card) => card.id < 3).map((CardArrays) => (
@@ -59,8 +61,15 @@ function ServicesSection(){
                         text={CardArrays.text}
                     />
                 ))}
+                 
                
             </div>
+        </div>
+        <div className="ButtonSection">
+        <ServiceButton text="Заказать услугу" />
+        </div>
+      
+  
         </div>
 
   

@@ -6,7 +6,7 @@ import './AboutSection.css';
 
 function AboutSection(){
     return(
-      <div> 
+      <div className="AboutSection">  
         <Heading
         level = 'h2'
         text = 'О НАС'

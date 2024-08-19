@@ -1,0 +1,36 @@
+.card {
+  max-width: 569px;
+  width: 100%;
+}
+.card .img-rel {
+  position: relative;
+}
+.card .img-rel .img {
+  max-width: 569px;
+  width: 100%;
+}
+.card .img-rel .event-rel {
+  position: absolute;
+  top: 37px;
+  left: 30px;
+  max-width: 211px;
+  width: 100%;
+}
+.card .img-rel .event-rel .event {
+  border-radius: 5px;
+  height: 40px;
+  background: #ad1818;
+}
+.card .img-rel .event-rel .event p {
+  text-align: center;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 22px);
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.card p {
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 30px);
+  letter-spacing: -0.03em;
+  color: #fff;
+}/*# sourceMappingURL=ServiceCard.css.map */

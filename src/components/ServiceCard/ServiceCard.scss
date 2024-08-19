@@ -1,0 +1,50 @@
+.card {
+    max-width: 569px;
+    width: 100%;
+
+
+    .img-rel {
+        position: relative;
+
+        .img {
+            max-width: 569px;
+            width: 100%;
+
+        }
+
+        .event-rel {
+            position: absolute;
+            top:37px;
+            left: 30px;
+            max-width: 211px;
+            width: 100%;
+
+            .event {
+
+                border-radius: 5px;
+             
+                height: 40px;
+                background: #ad1818;
+
+                p {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: clamp(14px, 2vw, 22px);
+                    letter-spacing: -0.03em;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+
+    p {
+
+        font-weight: 400;
+        font-size: clamp(18px, 3vw, 30px);
+        letter-spacing: -0.03em;
+        color: #fff;
+    }
+
+
+}

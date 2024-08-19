@@ -1,12 +1,29 @@
-.flex{
-  
-    display: flex;
-    flex-direction: column;
-    gap:85px;
-    .row-flex{
+
+.section{
+    background-color:#121212;
+    width: 100vw;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .flex{
+        max-width: 1150px;
+        width: 100%;
+        margin: 0% auto;
         display: flex;
-        flex-direction: row;
-        gap: 11px;
+        flex-direction: column;
+        gap:85px;
+     
+        .row-flex{
+            display: flex;
+            flex-direction: row;
+            gap: 11px;
+        }
+    
     }
+    .ButtonSection{
+        max-width: 1150px;
+        width: 100%;
+        margin: 0% auto;
+    }
+  
 
 }
