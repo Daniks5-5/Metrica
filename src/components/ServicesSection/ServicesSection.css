@@ -12,6 +12,13 @@
   flex-direction: column;
   gap: 85px;
 }
+.section .flex h2 {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
 .section .flex .row-flex {
   display: flex;
   flex-direction: row;
