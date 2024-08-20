@@ -6,7 +6,7 @@ function ContactsSection() {
 
     return (
 
-        <div className="ContactsSection">
+        <div className="ContactsSection" id="ContactSection">
             <Heading
                 level='h2'
                 text='Контакты'
