@@ -5,6 +5,8 @@ import AboutSection from './components/AboutSection/AboutSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import ServicesSection from './components/ServicesSection/ServicesSection'
 import ReviewSection from './components/ReviewSection/ReviewSection'
+import ContactsSection from './components/ContactsSection/ContactsSection'
+
 
 
 
@@ -20,6 +22,8 @@ function App() {
       <ProjectsSection />
       <ServicesSection />
       <ReviewSection />
+      <ContactsSection />
+
       
       
       </div>

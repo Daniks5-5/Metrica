@@ -1,0 +1,50 @@
+.ContactsSection {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+.ContactsSection div {
+  display: flex;
+}
+.ContactsSection div .phone {
+  display: flex;
+  flex-direction: row;
+  gap: 104px;
+}
+.ContactsSection div .phone p::before {
+  content: "";
+  display: flex;
+  margin-top: 49px;
+  margin-bottom: 30px;
+  background-image: url("../../assets/phone.png");
+  width: 24px;
+  height: 24px;
+}
+.ContactsSection div .phone p {
+  margin: 0;
+  font-weight: 400;
+  font-size: clamp(35px, 4vw, 60px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #121212;
+  display: inline;
+}
+.ContactsSection div .phone a::before {
+  content: "";
+  display: flex;
+  margin-top: 49px;
+  margin-bottom: 30px;
+  background-image: url("../../assets/email.svg");
+  width: 24px;
+  height: 24px;
+}
+.ContactsSection div .phone a {
+  font-weight: 400;
+  font-size: clamp(35px, 4vw, 60px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #121212;
+  opacity: 0.5;
+  text-decoration: none;
+}/*# sourceMappingURL=ContactsSection.css.map */

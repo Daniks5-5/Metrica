@@ -1,10 +1,11 @@
-.AboutSection{
+.AboutSection {
     max-width: 1150px;
     width: 100%;
     margin: 0% auto;
 
     .About {
         margin-bottom: 150px;
+
         p {
             font-family: var(--font-family);
             font-weight: 400;
@@ -13,10 +14,22 @@
             color: #121212;
             max-width: 1048px;
             width: 100%;
-          
-    
+
+
+        }
+
+        a {
+            border-radius: 5px;
+            padding: 20px 40px;
+            width: 255px;
+            height: 67px;
+            background: #ad1818;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: -0.03em;
+            color: #fff;
+            text-decoration: none;
         }
     }
-    
-}
 
+}

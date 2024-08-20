@@ -42,7 +42,7 @@ const CardArray = [
 function ServicesSection(){
  //вывожу из массива по две карточки на одной строке
     return(
-        <div className="section">    
+        <div id="section" className="section">    
         <div className="flex">
         <h2> УСЛУГИ</h2>
         
