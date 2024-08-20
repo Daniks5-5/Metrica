@@ -5,6 +5,13 @@ header {
   margin: 0% auto;
   justify-content: space-between;
 }
+header img {
+  padding-top: 20px;
+  width: 126px;
+  height: auto;
+  vertical-align: middle;
+  align-items: center;
+}
 header ul {
   display: flex;
   flex-direction: row;
