@@ -33,4 +33,60 @@
   font-size: clamp(18px, 3vw, 30px);
   letter-spacing: -0.03em;
   color: #fff;
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .card {
+    max-width: 1150px;
+    width: 100%;
+  }
+  .card .event-rel {
+    top: 37px;
+    left: 30px;
+    max-width: 211px;
+    width: 100%;
+  }
+  .card .event-rel .event {
+    border-radius: 5px;
+    height: 40px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .card {
+    max-width: 569px;
+    width: 100%;
+  }
+  .card .event-rel {
+    top: 31px;
+    left: 30px;
+    max-width: 163px;
+    width: 100%;
+  }
+  .card .event-rel .event {
+    border-radius: 5px;
+    height: 40px;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .card {
+    max-width: 350px;
+    width: 100%;
+  }
+  .card .img-rel {
+    position: relative;
+  }
+  .card .img-rel .event-rel {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 124px;
+    height: 30px;
+  }
+  .card .img-rel .event-rel .event {
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    width: 124px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=ServiceCard.css.map */

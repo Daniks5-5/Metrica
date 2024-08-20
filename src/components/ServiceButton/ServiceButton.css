@@ -82,4 +82,14 @@
   height: 67px;
   background: #ad1818;
   margin-bottom: 86px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .ServiceButton {
+    height: 60px;
+  }
+  .popup-back {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }/*# sourceMappingURL=ServiceButton.css.map */
