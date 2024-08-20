@@ -19,14 +19,14 @@ function App() {
   return (
     
       <div className='main'>
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
       <ServicesSection />
       <ReviewSection />
       <ContactsSection />
-      <Footer />
+      {/* <Footer /> */}
 
       
       

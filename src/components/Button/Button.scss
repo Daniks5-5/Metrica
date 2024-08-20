@@ -12,3 +12,16 @@ button {
     border: none;
     cursor: pointer;
 }
+
+
+@media(min-width:300px) and (max-width:600px) {
+    button {
+        border-radius: 4px;
+        padding: 15px 30px;
+        width: 194px;
+        height: 51px;
+        font-size: 16px;
+        letter-spacing: -0.03em;
+    }
+
+}
