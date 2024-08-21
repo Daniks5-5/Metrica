@@ -1,15 +1,20 @@
-@charset "UTF-8";
-.allCards {
+.Cards {
   max-width: 1150px;
   width: 100%;
-  margin: 0% auto;
+  margin: 0 auto;
+  margin-top: 117px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.allCards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .allCards .reviewCard {
-  flex: 0 0 calc(50% - 10px); /* Устанавливаем ширину для двух элементов в строке */
-  margin: 5px; /* Отступы между элементами */
+  flex: 0 0 calc(50% - 10px);
+  margin: 5px;
   box-sizing: border-box;
 }
 .allCards .reviewCard .review-title {
@@ -27,4 +32,10 @@
   font-size: clamp(16px, 3vw, 22px);
   letter-spacing: -0.03em;
   color: #000;
+}
+
+@media (max-width: 900px) {
+  .allCards {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=ReviewSection.css.map */
