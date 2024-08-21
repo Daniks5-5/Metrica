@@ -1,8 +1,9 @@
 header {
   display: flex;
   flex-direction: row;
-  width: 1150px;
-  margin: 0% auto;
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
   justify-content: space-between;
 }
 header img {
@@ -12,15 +13,15 @@ header img {
   vertical-align: middle;
   align-items: center;
 }
-header ul {
+header nav ul {
   display: flex;
   flex-direction: row;
   gap: 60px;
 }
-header ul li {
+header nav ul li {
   list-style-type: none;
 }
-header ul li a {
+header nav ul li a {
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -28,7 +29,45 @@ header ul li a {
   text-transform: uppercase;
   color: #121212;
 }
-header ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
   opacity: 0.5;
+}
+header nav .mobile-btn {
+  display: none;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 960px) {
+  header nav {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+  }
+  header nav .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 274px;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999 !important;
+    transition: opacity 0.3s ease;
+  }
+  header nav .menu li a {
+    font-size: 25px;
+  }
+  header nav .mobile-btn {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    top: 30px;
+    cursor: pointer;
+  }
+  header nav .active {
+    display: flex;
+  }
 }/*# sourceMappingURL=Header.css.map */

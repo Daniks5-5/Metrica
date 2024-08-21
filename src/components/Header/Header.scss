@@ -1,9 +1,11 @@
 header { 
     display: flex; 
     flex-direction: row; 
-    width: 1150px; 
-    margin: 0% auto; 
+    max-width: 1150px; 
+    width: 100%;
+    margin: 0 auto; 
     justify-content: space-between; 
+
     img {
         padding-top: 20px;
         width: 126px; 
@@ -11,24 +13,77 @@ header {
         vertical-align: middle; 
         align-items: center;
     }
-    ul { 
-        display: flex; 
-        flex-direction: row; 
-        gap: 60px; 
-        li { 
-            list-style-type: none; 
-            a { 
-                text-decoration: none; 
-                font-weight: 400; 
-                font-size: 18px; 
-                letter-spacing: -0.03em; 
-                text-transform: uppercase; 
-                color: #121212; 
-            } 
-            a:hover{ 
-                text-decoration:underline; 
-                opacity: 0.5; 
+
+    nav {
+        ul { 
+            display: flex; 
+            flex-direction: row; 
+            gap: 60px; 
+
+            li { 
+                list-style-type: none; 
+
+                a { 
+                    text-decoration: none; 
+                    font-weight: 400; 
+                    font-size: 18px; 
+                    letter-spacing: -0.03em; 
+                    text-transform: uppercase; 
+                    color: #121212; 
+                } 
+
+                a:hover { 
+                    text-decoration: underline; 
+                    opacity: 0.5; 
+                } 
             } 
         } 
-    } 
+
+        .mobile-btn {
+            display: none;
+            z-index: 9999!important;
+        }
+    }
 } 
+
+@media (max-width: 960px) {
+    header {
+        nav {
+            position: fixed;
+            right: 0;
+            z-index: 10;
+
+            .menu {
+                display: none; // Скрыто по умолчанию
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 274px;
+                height: 100vh;
+                background-color: white;
+                z-index: 9999!important;
+                transition: opacity 0.3s ease; // Плавный переход по непрозрачности
+
+                li {
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .mobile-btn {
+                display: block !important;
+                position: absolute;
+                right: 0;
+                z-index: 10;
+                top: 30px;
+                cursor: pointer;
+            }
+
+            .active {
+                display: flex; // Показываем меню, когда оно активно
+            }
+        }
+    }
+}
