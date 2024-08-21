@@ -28,11 +28,11 @@ footer {
                     letter-spacing: -0.03em;
                     text-transform: uppercase;
                     color: white;
-                }
 
-                a:hover {
-                    text-decoration: underline;
-                    opacity: 0.5;
+                    &:hover {
+                        text-decoration: underline;
+                        opacity: 0.5;
+                    }
                 }
             }
         }
@@ -45,4 +45,60 @@ footer {
             text-align: center; 
         }
     }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    footer {
+        nav {
+            max-width: 1150px;
+
+            ul {
+                gap: 60px;
+
+                li {
+                    a {
+                        font-size: 18px; // Убираем дублирование
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    footer {
+        padding-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+        nav {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 60px;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        
+            ul {
+                gap: 10px;
+                display: flex; 
+                flex-direction: row; 
+        
+                li {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        
+            p {
+                max-width: 250px;
+                width: 100%;
+                font-size: 10px;
+                padding-left: 25px;
+            }
+        }  
+      }
 }

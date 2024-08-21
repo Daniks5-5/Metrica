@@ -26,7 +26,7 @@ function App() {
       <ServicesSection />
       <ReviewSection />
       <ContactsSection />
-      {/* <Footer /> */}
+      <Footer />
 
       
       

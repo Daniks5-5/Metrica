@@ -14,10 +14,6 @@ function Footer() {
                 <p className="text"> студия дизайна интерьера Метрика — 2024</p>
             </nav>
 
-             
-      
-           
-
         </footer>
 
 
