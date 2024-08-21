@@ -14,7 +14,7 @@
             flex-direction: row;
             gap: 104px;
 
-            p::before{
+            p::before {
                 content: '';
                 display: flex;
                 margin-top: 49px;
@@ -34,8 +34,7 @@
                 display: inline; 
             }
 
-      
-            a::before{
+            a::before {
                 content: '';
                 display: flex;
                 margin-top: 49px;
@@ -58,52 +57,59 @@
     }
 }
 
-@media (min-width: 901px) and (max-width: 1200px){
+@media (min-width: 901px) and (max-width: 1200px) {
     .ContactsSection {
         max-width: 778px;
         width: 100%;
         margin: 0 auto;
         margin-bottom: 150px;
-            .phone {
+
+        .phone {
+            display: flex;
+            flex-direction: row;
+            gap: 104px;
+
+            p::before {
+                content: '';
                 display: flex;
-                flex-direction: row;
-                gap: 104px;
-                p::before{
-                    content: '';
-                    display: flex;
-                    margin-top: 49px;
-                    margin-bottom: 26px;
-                    background-image: url("../../assets/phone.png");
-                    width: 24px;
-                    height: 24px;
-                }
-                p {
-                    margin: 0; // убираем отступы
-                    font-size: clamp(35px, 4vw, 60px);
-                    display: inline; 
-                }
-                a::before{
-                    content: '';
-                    display: flex;
-                    margin-top: 26px;
-                    margin-bottom: 30px;
-                    background-image: url("../../assets/email.svg");
-                    width: 24px;
-                    height: 24px;
-                }
-                a {
-                    font-size: clamp(35px, 4vw, 60px);
-                }
+                margin-top: 49px;
+                margin-bottom: 26px;
+                background-image: url("../../assets/phone.png");
+                width: 24px;
+                height: 24px;
+            }
+
+            p {
+                margin: 0; // убираем отступы
+                font-size: clamp(35px, 4vw, 60px);
+                display: inline; 
+            }
+
+            a::before {
+                content: '';
+                display: flex;
+                margin-top: 26px;
+                margin-bottom: 30px;
+                background-image: url("../../assets/email.svg");
+                width: 24px;
+                height: 24px;
+            }
+
+            a {
+                font-size: clamp(35px, 4vw, 60px);
             }
         }
-   
-        }
+    }
+}
 
-@media(min-width:300px) and (max-width:600px){
+@media (min-width: 300px) and (max-width: 600px) {
+    .ContactsSection {
+        margin-top:80px ;
+        margin-bottom: 80px;
     .phone {
         display: flex;
-        flex-direction: column;
-        gap: 104px;
+        flex-direction: column!important;
+        gap: 20px!important;
     }
-
+}
 }
