@@ -24,12 +24,13 @@ function App() {
               <ServicesSection />
               <ReviewSection />
               <ContactsSection />
+              <Footer />
             </>
           } />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<AboutSection />} />
         </Routes>
-        <Footer />
+     
       </Router>
     </div>
   );
