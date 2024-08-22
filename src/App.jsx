@@ -13,7 +13,7 @@ import Projects from './Pages/Projects/Projects';
 function App() {
   return (
     <div className='main'>
-      <Router>
+      <Router  basename="/Metrica">
         <Routes>
           <Route path="/" element={
             <>
