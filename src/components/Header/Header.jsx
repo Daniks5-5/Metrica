@@ -7,6 +7,10 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 function Header() {
     const [nav, setNav] = useState(false);
 
+    const handleMenuClick = () => {
+        setNav(false); // Закрываем меню при нажатии на ссылку
+    };
+
     return (
         <header>
             <div>
@@ -14,14 +18,15 @@ function Header() {
             </div>
             <nav>
                 <ul className={nav ? "menu active" : "menu"}>
-                    <li><a href="#AboutSection">О НАС</a></li>
-                    <li><a href="#Project">ПРОЕКТЫ</a></li>
-                    <li><a href="#section">УСЛУГИ</a></li>
-                    <li><a href="#ContactSection">КОНТАКТЫ</a></li>
+                    <li><a href="#AboutSection" onClick={handleMenuClick}>О НАС</a></li>
+                    <li><a href="#Project" onClick={handleMenuClick}>ПРОЕКТЫ</a></li>
+                    <li><a href="#section" onClick={handleMenuClick}>УСЛУГИ</a></li>
+                    <li><a href="#ContactSection" onClick={handleMenuClick}>КОНТАКТЫ</a></li>
                 </ul>
                 <div onClick={() => setNav(!nav)} className="mobile-btn">
                     {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
                 </div>
+                <div className="unActive"></div>
             </nav>
         </header>
     );

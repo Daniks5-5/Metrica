@@ -45,16 +45,18 @@ header {
             display: none;
             z-index: 9999!important;
         }
+        .unActive{
+            display: none;
+        }
+
     }
 } 
-
 @media (max-width: 960px) {
     header {
         nav {
             position: fixed;
             right: 0;
             z-index: 10;
-
             .menu {
                 display: none; // Скрыто по умолчанию
                 flex-direction: column;
@@ -66,14 +68,12 @@ header {
                 background-color: white;
                 z-index: 9999!important;
                 transition: opacity 0.3s ease; // Плавный переход по непрозрачности
-
                 li {
                     a {
                         font-size: 25px;
                     }
                 }
             }
-
             .mobile-btn {
                 display: block !important;
                 position: absolute;
@@ -82,7 +82,6 @@ header {
                 top: 30px;
                 cursor: pointer;
             }
-
             .active {
                 display: flex; // Показываем меню, когда оно активно
             }
