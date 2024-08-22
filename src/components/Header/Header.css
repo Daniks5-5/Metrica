@@ -39,9 +39,6 @@ header nav .mobile-btn {
   display: none;
   z-index: 9999 !important;
 }
-header nav .unActive {
-  display: none;
-}
 
 @media (max-width: 960px) {
   header nav {
