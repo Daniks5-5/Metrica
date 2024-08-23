@@ -11,7 +11,6 @@ function ProjectCard(props){
         <div>
         <img className="img" src={props.image} alt={props.title} />
         <p> {props.title} {props. square} {props.year} </p>
-        <a className="link-style" href={props.link}> Подробнее → </a>
         </div>
 
    </div>

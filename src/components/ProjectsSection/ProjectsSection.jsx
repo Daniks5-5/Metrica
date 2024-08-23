@@ -12,7 +12,6 @@ const projects = [
         title: 'ЖК ПРАВОБЕРЕЖНЫЙ —',
         square: 112 + 'м²—',
         year: '2023',
-        link: '/',
         image: projectPhoto1,
         isNew: true
     },
@@ -20,7 +19,6 @@ const projects = [
         title: 'ЖК НОРВЕЖСКИЙ ПАРК —',
         square: 75 + 'м²—',
         year: '2023',
-        link: '/',
         image: projectPhoto2,
         isNew: false
     },
@@ -28,7 +26,6 @@ const projects = [
         title: 'ЖК СОСНОВСКИЕ ОЗЕРА —',
         square: 94 + 'м²—',
         year: '2022',
-        link: '/',
         image: projectPhoto3,
         isNew: false
     }
@@ -48,7 +45,6 @@ function ProjectsSection() {
                         title={project.title}
                         square={project.square}
                         year={project.year}
-                        link={project.link}
                         image={project.image}
                     />
                 ))}
