@@ -37,7 +37,7 @@ function Projects() {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/about');
+        navigate('/');
     }
 
     return (

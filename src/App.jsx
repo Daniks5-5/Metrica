@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import HeroSection from './components/HeroSection/HeroSection';
@@ -13,11 +13,11 @@ import Projects from './Pages/Projects/Projects';
 function App() {
   return (
     <div className='main'>
-      <Router  basename="/Metrica">
+      <Router basename="/Metrica/"> {/* basename должен совпадать с именем репозитория */}
         <Routes>
           <Route path="/" element={
             <>
-             <Header />
+              <Header />
               <HeroSection />
               <AboutSection />
               <ProjectsSection />
@@ -30,7 +30,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<AboutSection />} />
         </Routes>
-     
       </Router>
     </div>
   );
