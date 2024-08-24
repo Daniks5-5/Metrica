@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Импортируем Link
+import { useNavigate } from 'react-router-dom';
 import "./Projects.css";
 import gallery1 from "../../assets/gallery1.png";
 import gallery2 from "../../assets/gallery2.png";
@@ -12,41 +12,48 @@ const projectsArr = [
     {
         img: gallery1,
         text: 'Проект  Двухкомнтаной квартиры в ЖК Лесной Пейзаж',
-        id:1
+        id: 1
     },
     {
         img: gallery2,
         text: 'Проект гостиной в ЖК Маяк',
-        id:2
+        id: 2
     },
     {
         img: gallery3,
         text: 'Визуализация кухни-гостиной в частном доме',
-        id:3
+        id: 3
     },
     {
-       
+
         text: 'Проект кухни в скандинавском стиле для ЖК Северный Ветер',
         img: gallery4,
-        id:4
+        id: 4
     }
 ]
 
 
 function Projects() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/about');
+    }
+
     return (
         <div className="Projecst">
-            {projectsArr.map(project =>(
-                <ProjectsCard 
-                key = {project.id}
-                text = {project.text}
-                img = {project.img}
+            {projectsArr.map(project => (
+                <ProjectsCard
+                    key={project.id}
+                    text={project.text}
+                    img={project.img}
                 />
             ))}
 
-            <Link to="/about">
-                <button>Вернуться на главную страницу</button>
-            </Link>
+            <div>
+                <button onClick={handleClick}>Вернуться на главную страницу</button>
+            </div>
+
 
         </div>
     );
