@@ -44,7 +44,7 @@ function Projects() {
                 />
             ))}
 
-            <Link to="/">
+            <Link to="/about">
                 <button>Вернуться на главную страницу</button>
             </Link>
 
