@@ -45,9 +45,6 @@ function ServicesSection(){
         <div id="section" className="section">    
         <div className="flex">
         <h2> УСЛУГИ</h2>
-        
-            
-            
             <div className="row-flex">
             {CardArray.filter((card) => card.id < 3).map((CardArrays) => (
                     <ServiceCard
@@ -56,7 +53,6 @@ function ServicesSection(){
                         text={CardArrays.text}
                     />
                 ))}
-              
             </div>
             <div className="row-flex"> 
             {CardArray.filter((card) => card.id > 2).map((CardArrays) => (
@@ -65,19 +61,13 @@ function ServicesSection(){
                         event={CardArrays.event}
                         text={CardArrays.text}
                     />
-                ))}
-                 
-               
+                ))} 
             </div>
         </div>
         <div className="ButtonSection">
         <ServiceButton text="Заказать услугу" />
         </div>
-      
-  
         </div>
-
-  
     );
   }
   
