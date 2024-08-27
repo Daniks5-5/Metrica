@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Popup from "reactjs-popup";
 import "./ServiceButton.css";
 import { useForm } from "react-hook-form";
 import InputMask from 'react-input-mask';
+import { collection, getDocs } from "firebase/firestore";
+import {db} from '../firebase';
+
+
+const [info, setInfo] = useState([]); //ук useState для обработки данных, полученных из Firestore
+
+const fetchPost = async () => {
+
+    await getDocs(collection(db, "todos")) // getDocs для получения данных из коллекции
+        .then((querySnapshot)=>{               
+            const newData = querySnapshot.docs
+                .map((doc) => ({...doc.data(), id:doc.id }));
+                setInfo(newData);                
+            console.log(info, newData);
+        })
+
+}
+
+useEffect(()=>{
+    fetchPost();
+}, [])
+
+
 
 function ServiceButton(props) {
+    const [numPhone, setNumPhone] = useState("");
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => console.log(data);
+    const addInfo = (e) => {
+        e.preventDefault();        
+    }
 
     return (
         <div className="ServiceButtonSection">
@@ -19,7 +46,7 @@ function ServiceButton(props) {
                         </div>
                         <div className="popup-input">
                             <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
-                                <input {...register("firstName")} placeholder="Имя " />
+                                <input onChange={(e)=> setNumPhone(e.target.value)} {...register("firstName")} placeholder="Имя " />
                                 <input {...register("email")} placeholder="Email" />
                                 <InputMask
                                     mask="+7 (999) 999-99-99"
@@ -38,17 +65,8 @@ function ServiceButton(props) {
                             </form>
 
 
-
-
-
-
-
-                            {/* <input type="text" placeholder="Имя" />
-                            <input type="email" placeholder="Email" />
-                            <input type="text" placeholder="Номер телефона" /> */}
-
                         </div>
-                        <button className="popup-button"> Отправить </button>
+                        <button className="popup-button" onClick={addInfo}> Отправить </button>
 
                     </div>
 
